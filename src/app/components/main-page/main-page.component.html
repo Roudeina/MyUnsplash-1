@@ -1,0 +1,51 @@
+<div class="mainPage">
+  <div class="toolBar">
+    <form #form="ngForm">
+      <mat-toolbar>
+        <img id='logo'
+            src="https://inconclusive-clock.surge.sh/static/media/my_unsplash_logo.e948d53e.svg"
+          />
+        <div style="font-size: 10px">
+          
+          <span class="example-spacer"></span>
+        <div class="searchBox">
+          <mat-form-field  appearance="outline">
+            <mat-icon matSuffix>search</mat-icon>
+            <mat-label>Search by label</mat-label>
+            <input
+              matInput
+              placeholder=""
+              name="labelInput"
+              [(ngModel)]="searchText"
+            />
+          </mat-form-field>
+        </div>
+        </div>
+        <span class="space"></span>
+        <div class="addButton">
+          <button class="btn"  (click)="openDialog()">
+            Add a photo
+          </button>
+        </div>
+      </mat-toolbar>
+    </form>
+  </div>
+  <div class="container">
+    <div class="background" *ngFor="let photo of photos| search: searchText; let index = index">
+      <figure
+        (mouseenter)="onHover($event, index)"
+        (mouseleave)="onDisHover($event, index)"
+      >
+        <img
+          src="{{ photo.url }}"
+          alt=""
+        />
+        <div class="hoverContent" id="myNav" *ngIf="hovred && show[index]">
+          <button id="btnDelete" (click)="onClick(index)">Delete</button>
+          <p id="label"> {{ photo.label }}</p>
+        </div>
+      </figure>
+
+    </div>
+  </div>
+</div>

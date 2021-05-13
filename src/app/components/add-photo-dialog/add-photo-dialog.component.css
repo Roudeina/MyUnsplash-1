@@ -1,0 +1,26 @@
+
+.addBtn{
+    cursor: pointer;
+    width: fit-content;
+    font-size: 12pt;
+  background-color: #4ca95f;
+  border: solid 2px #3f854d;
+  border-radius: 15px;
+  color: white;
+}
+.addBtn:hover{
+    color: white;
+    background-color: #3f854d;
+    border: solid 2px #3f854d
+  }
+  p{
+      font-size: xx-small;
+      margin-top: 30px;
+  }
+  .action{
+    margin-top: 30px;
+margin-left: 28px;
+  }
+  .container{
+    padding: 20px 15px 20px 20px;
+  }

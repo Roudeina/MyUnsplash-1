@@ -1,0 +1,106 @@
+body {
+  background-color: #000;
+  font: 1.1em Arial, Helvetica, sans-serif;
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  position: relative;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+img:hover {
+  filter: grayscale(0.5) brightness(0.5);
+}
+
+.container {
+  column-count: 3;
+  column-gap: 15px;
+}
+#btnDelete {
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 63px;
+  font-size: 8pt;
+  float: inline-start;
+  margin-left: 57ch;
+  background-color: Transparent;
+  border: solid 2px #b22222;
+  outline: none;
+  border-radius: 25px;
+  color: #b22222;
+  height: 30px;
+}
+#btnDelete:hover {
+  color: white;
+  background-color: #ef5350;
+  border: solid 2px #ef5350;
+}
+
+#label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: whitesmoke;
+  text-shadow: #050505;
+  margin-top: -8%;
+  margin-left: 3%;
+}
+.hoverContent {
+  position: absolute;
+  z-index: 1;
+}
+.btn {
+  margin-left: 60ch;
+  background-color: #3cb371;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.btn :hover {
+  background-color: #2e8b57;
+}
+#logo {
+  margin-left: 20px;
+  /* padding-top: 60px; */
+  margin-top: 5px;
+}
+
+.toolBar {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 20px 300px 10px 300px;
+}
+.searchBox {
+  margin-left: 150px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mainPage {
+  padding: 8px 8px 8px 8px;
+}
+.container {
+  padding: 50px 300px 100px 300px;
+}

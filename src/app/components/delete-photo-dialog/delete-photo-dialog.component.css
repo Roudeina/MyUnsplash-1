@@ -1,0 +1,22 @@
+.deleteBtn{
+    cursor: pointer;
+    width: 63px;
+    font-size: 8pt;
+  background-color: Transparent;
+  border: solid 2px #B22222;
+  border-radius: 25px;
+  color: #B22222;
+}
+.deleteBtn:hover{
+    color: white;
+    background-color: #ef5350 ;
+    border: solid 2px #ef5350
+  }
+  p{
+      font-size: xx-small;
+      margin-top: 90px;
+  }
+  .action{
+    margin-top: 60px;
+margin-left: 30px;
+  }
