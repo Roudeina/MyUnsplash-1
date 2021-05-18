@@ -21,6 +21,6 @@ export class ShareDataService {
   }
 
   sendImage(image: string, label:string) {
-    return this.httpClient.post('https://polar-stream-63094.herokuapp.com/uploadImgs', {image:image,label:label});
+    return this.httpClient.post('https://myunsplash-back.herokuapp.com/uploadImgs', {image:image,label:label});
   }
 }

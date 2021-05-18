@@ -36,13 +36,10 @@ export class AddPhotoDialogComponent implements OnInit {
       }
     };
 
-  //   refresh(): void {
-  //     window.location.reload();
-  // }
+
 
     newMessage() {
       this.dataService.changeFile(this.Image)
-      console.log("this file on click ",this.file)
     }
 
   ngOnInit(): void {
